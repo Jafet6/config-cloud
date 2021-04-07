@@ -22,7 +22,7 @@ spring:
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/product/**, /cart/**
-        - id: ecommercespring
-          uri: lb://ECOMMERCESPRING
+        - id: user-service
+          uri: lb://USER-SERVICE
           predicates:
-            - Path=/usuarios/**,/marcas/**,/categorias/**,/produtos/**
+            - Path=/user/**
