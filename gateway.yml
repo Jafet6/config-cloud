@@ -23,9 +23,9 @@ spring:
           predicates:
             - Path=/product/**, /category/**, /brand/**
         - id: order-service
-            uri: lb://ORDER-SERVICE
-            predicates:
-              - Path=/order/**
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/order/**
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
